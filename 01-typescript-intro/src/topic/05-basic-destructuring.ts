@@ -22,17 +22,34 @@ const audioPlayer: AudioPlayer = {
   },
 };
 
-const song = "New Song";
+// const song = "New Song";
 
-const { song: anotherSong, songDuration: duration, details } = audioPlayer;
+// const { song: anotherSong, songDuration: duration, details } = audioPlayer;
 
-const { author } = details;
+// const { author } = details;
 
 const {} = audioPlayer;
 
-console.log(`song: `, song);
-console.log(`song: `, anotherSong);
-console.log(`duration: `, duration);
-console.log(`author: `, author);
+// console.log(`song: `, song);
+// console.log(`song: `, anotherSong);
+// console.log(`duration: `, duration);
+// console.log(`author: `, author);
+
+//////////////////////////////////////////////////////////////////////////////
+
+const dbz: string[] = ["Goku", "Vegeta", "Gohan", "Trunks"];
+
+const trunks = dbz[3] || "No character";
+
+const [p1, p2, p3, p4, p5 = "Not found"]: string[] = [
+  "Goku",
+  "Vegeta",
+  "Gohan",
+  "Trunks",
+];
+
+console.log(`Character :`, dbz[3]);
+console.log(`Character :`, trunks);
+console.log(`Character :`, p5);
 
 export {};
