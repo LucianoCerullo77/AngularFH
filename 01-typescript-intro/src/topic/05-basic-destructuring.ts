@@ -1,4 +1,3 @@
-import data from "../../../../Trabajos/HomeHeroClon/Frontend/src/hooks/useData";
 
 interface AudioPlayer {
   audioVolume: number;
@@ -22,18 +21,18 @@ const audioPlayer: AudioPlayer = {
   },
 };
 
-// const song = "New Song";
+const song = "New Song";
 
-// const { song: anotherSong, songDuration: duration, details } = audioPlayer;
+const { song: anotherSong, songDuration: duration, details } = audioPlayer;
 
-// const { author } = details;
+const { author } = details;
 
 const {} = audioPlayer;
 
-// console.log(`song: `, song);
-// console.log(`song: `, anotherSong);
-// console.log(`duration: `, duration);
-// console.log(`author: `, author);
+console.log(`song: `, song);
+console.log(`song: `, anotherSong);
+console.log(`duration: `, duration);
+console.log(`author: `, author);
 
 //////////////////////////////////////////////////////////////////////////////
 

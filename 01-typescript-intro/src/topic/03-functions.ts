@@ -17,11 +17,11 @@ function multiply(
 }
 
 // resolve is number type as default value due to addNumber
-// const resolve: number = addNumber(1, 2);
-// const resolve2: string = addNumbersArrow(1, 2);
-// const multiplyResolve: number = multiply(5);
+const resolve: number = addNumber(1, 2);
+const resolve2: string = addNumbersArrow(1, 2);
+const multiplyResolve: number = multiply(5);
 
-//console.log({ resolve, resolve2, multiplyResolve });
+console.log({ resolve, resolve2, multiplyResolve });
 
 ////////////////////////////////////////////////////////////////
 
@@ -46,6 +46,6 @@ const strider: Character = {
 };
 healCharacter(strider, 0);
 
-//strider.showHp();
+strider.showHp();
 
 export {};
