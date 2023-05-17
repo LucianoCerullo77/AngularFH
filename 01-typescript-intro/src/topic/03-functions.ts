@@ -17,12 +17,35 @@ function multiply(
 }
 
 // resolve is number type as default value due to addNumber
-const resolve: number = addNumber(1, 2);
-const resolve2: string = addNumbersArrow(1, 2);
-const multiplyResolve: number = multiply(5);
+// const resolve: number = addNumber(1, 2);
+// const resolve2: string = addNumbersArrow(1, 2);
+// const multiplyResolve: number = multiply(5);
 
-console.log({ resolve, resolve2, multiplyResolve });
+//console.log({ resolve, resolve2, multiplyResolve });
 
 ////////////////////////////////////////////////////////////////
+
+// Functions with objects as parameters
+
+interface Character {
+  name: string;
+  hp: number;
+  showHp: () => void;
+}
+
+const healCharacter = (character: Character, amount: number) => {
+  character.hp += amount;
+};
+
+const strider: Character = {
+  name: "Strider",
+  hp: 50,
+  showHp() {
+    console.log(`Hp : ${this.hp}`);
+  },
+};
+healCharacter(strider, 0);
+
+strider.showHp();
 
 export {};
