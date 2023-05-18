@@ -13,7 +13,7 @@ const tablet: Product = {
   price: 200,
 };
 
-export interface TaxCalculationOptions {
+interface TaxCalculationOptions {
   tax: number;
   products: Product[];
 }
