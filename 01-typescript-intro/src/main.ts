@@ -5,7 +5,8 @@ import "./style.css";
 // import "./topic/04-homework-types.ts";
 // import './topic/05-basic-destructuring.ts'
 // import './topic/06-function-destructuring.ts'
-import './topic/07-imports-exports'
+// import './topic/07-imports-exports'
+import './topic/08-classes'
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 Hello World
