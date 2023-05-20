@@ -14,7 +14,17 @@ export class Person {
   }
 }
 
-const ironMan = new Person("Tony Stark", "Florida");
+export class Hero extends Person {
+  constructor(
+    public alterEgo: string,
+    public age: number,
+    public realName: string
+  ) {
+    super(realName,'New York');
+  }
+}
+
+const ironMan = new Hero("IronMan", 45, "Tony Stark");
 
 // ironman.address shouldn't be visible on the console, but typescript compiles to js, so it can be visible, but in ts
 // is gonna show an error
