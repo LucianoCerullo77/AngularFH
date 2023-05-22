@@ -8,7 +8,8 @@ import "./style.css";
 // import './topic/07-imports-exports'
 // import './topic/08-classes'
 // import "./topic/09-generics";
-import "./topic/10-decorators";
+// import "./topic/10-decorators";
+import "./topic/11-optional-chaining"
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 Hello World
