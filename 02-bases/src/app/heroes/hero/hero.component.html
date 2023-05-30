@@ -13,6 +13,14 @@
   <dd>{{ capitalizedName }}</dd>
 </dl>
 
-<button class="btn btn-primary mx-2">Change name</button>
+<button class="btn btn-primary mx-2" (click)="changeHeroName()">
+  Change name
+</button>
 
-<button class="btn btn-primary">Change age</button>
+<button class="btn btn-primary mx-2" (click)="changeHeroRealName()">
+  Change Hero Real Name
+</button>
+
+<button class="btn btn-primary mx-2" (click)="changeHeroAge()">
+  Change age
+</button>
