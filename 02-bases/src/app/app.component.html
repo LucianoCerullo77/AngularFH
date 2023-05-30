@@ -3,5 +3,6 @@
 <p>Welcome to Angular</p>
 <h3>Counter : {{ counter }}</h3>
 
-<button (click)="increasedBy()" >+ 1</button>
-<button>- 1</button>
+<button (click)="increasedBy(1)">+ 1</button>
+<button (click)="resetCount()">Reset</button>
+<button (click)="increasedBy(-1)">- 1</button>
