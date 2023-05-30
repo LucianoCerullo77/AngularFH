@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
   public heroName: string = 'Iron Man';
-  public realName: string = 'Tony Stark';
+  public heroRealName: string = 'Tony Stark';
   public age: number = 45;
 
   get capitalizedName(): string {
@@ -21,13 +21,16 @@ export class HeroComponent {
   changeHeroName(): void {
     // throw 'Method not found'
     this.heroName = 'Spider-Man';
-  }
-
-  changeHeroRealName(): void {
-    this.realName = 'Peter Parker';
+    this.heroRealName = 'Peter Parker';
   }
 
   changeHeroAge() {
     this.age = 23;
+  }
+
+  resetForm(): void {
+    this.heroName = 'Iron Man';
+    this.heroRealName = 'Tony Stark';
+    this.age = 45;
   }
 }

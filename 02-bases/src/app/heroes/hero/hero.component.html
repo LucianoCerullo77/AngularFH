@@ -1,7 +1,7 @@
 <h1>{{ heroName }}</h1>
 <dl>
   <td>Name:</td>
-  <dd>{{ realName }}</dd>
+  <dd>{{ heroRealName }}</dd>
 
   <td>Age:</td>
   <dd>{{ age }}</dd>
@@ -13,14 +13,20 @@
   <dd>{{ capitalizedName }}</dd>
 </dl>
 
-<button class="btn btn-primary mx-2" (click)="changeHeroName()">
+<button
+  class="btn btn-primary mx-2"
+  (click)="changeHeroName()"
+  *ngIf="heroName !== 'Spider-Man' && 'Peter Parker'"
+>
   Change name
 </button>
 
-<button class="btn btn-primary mx-2" (click)="changeHeroRealName()">
-  Change Hero Real Name
-</button>
-
-<button class="btn btn-primary mx-2" (click)="changeHeroAge()">
+<button
+  class="btn btn-primary mx-2"
+  (click)="changeHeroAge()"
+  *ngIf="age !== 23"
+>
   Change age
 </button>
+
+<button class="btn btn-primary mx-2" (click)="resetForm()">Reset Form</button>
