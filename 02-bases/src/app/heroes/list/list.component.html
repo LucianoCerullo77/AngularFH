@@ -1,9 +1,5 @@
 <h3>Hero list</h3>
 
 <ul class="mt-2 list-group">
-  <li class="list-group-item">Spider-man</li>
-  <li class="list-group-item">Iron-man</li>
-  <li class="list-group-item">Ant-man</li>
-  <li class="list-group-item">Hulk</li>
-  <li class="list-group-item">Thor</li>
+  <li *ngFor="let name of heroNames" class="list-group-item">{{ name }}</li>
 </ul>
