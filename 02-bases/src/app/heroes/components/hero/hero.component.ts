@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css'],
 })
+
+
 export class HeroComponent {
   public heroName: string = 'Iron Man';
   public heroRealName: string = 'Tony Stark';
