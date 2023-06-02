@@ -13,4 +13,8 @@ export class ListComponent {
     'Hulk',
     'Thor',
   ];
+
+  removeLastHero(): void {
+    this.heroNames.pop();
+  }
 }
