@@ -8,5 +8,15 @@ import { Character } from '../interfaces/character.interface';
 export class MainPageComponent {
   constructor() {}
   public title: string = 'Dragon Ball Z Character';
-  public characters: Character[] = [];
+  public characters: Character[] = [
+    {
+      name: 'Krilin',
+      power: 5000,
+    },
+    {
+      name: 'Goku',
+      power: 20000,
+    },
+    { name: 'Vegeta', power: 18000 },
+  ];
 }
