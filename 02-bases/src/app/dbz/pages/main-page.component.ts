@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-dbz-main-page',
   templateUrl: './main-page.component.html',
 })
-export class MainPage {
+export class MainPageComponent {
   constructor() {}
-  public title:string = 'Dbz Works'
+  public title: string = 'Dragon Ball Z Main Page';
 }
