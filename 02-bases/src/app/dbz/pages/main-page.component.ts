@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
   constructor() {}
-  public title: string = 'Dragon Ball Z Main Page';
+  public title: string = 'Dragon Ball Z Character';
 }
