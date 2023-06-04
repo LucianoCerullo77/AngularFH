@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dbz-addCaracter',
+  selector: 'dbz-add-character',
   templateUrl: './add-character.component.html',
-  styleUrls: ['./add-character.component.css']
+  styleUrls: ['./add-character.component.css'],
 })
 export class DbzAddCharacterComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
