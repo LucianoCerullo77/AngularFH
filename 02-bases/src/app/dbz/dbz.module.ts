@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './pages/main-page.component';
 import { DbzListComponent } from './components/list/list.component';
-import { DbzAddCaracterComponent } from './components/addCaracter/addCaracter.component';
+import { DbzAddCharacterComponent } from './components/add-character/add-character.component';
 
 @NgModule({
-  declarations: [MainPageComponent, DbzListComponent, DbzAddCaracterComponent],
+  declarations: [MainPageComponent, DbzListComponent, DbzAddCharacterComponent],
   imports: [CommonModule],
   exports: [MainPageComponent],
 })
