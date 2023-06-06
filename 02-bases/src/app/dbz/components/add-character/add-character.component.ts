@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
@@ -13,4 +14,9 @@ export class DbzAddCharacterComponent {
     name: '',
     power: 0,
   };
+
+  emitCharacter():void{
+    console.log(this.character);
+
+  }
 }
