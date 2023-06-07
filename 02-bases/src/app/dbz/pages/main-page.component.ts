@@ -19,4 +19,10 @@ export class MainPageComponent {
     },
     { name: 'Vegeta', power: 18000 },
   ];
+
+  onNewCharacter(character: Character): void {
+    console.log("Difference");
+
+    console.log(character);
+  }
 }
