@@ -15,8 +15,10 @@ export class DbzAddCharacterComponent {
     power: 0,
   };
 
-  emitCharacter():void{
+  emitCharacter(): void {
     console.log(this.character);
 
+    this.character.name = '';
+    this.character.power = 0;
   }
 }
