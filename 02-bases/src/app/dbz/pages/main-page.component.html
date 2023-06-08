@@ -5,14 +5,14 @@
   <div class="col">
     <!-- calling data from list component with mainpage information -->
     <dbz-list
-      (onDelete)="dbzService.deleteCharacterById($event)"
-      [characterList]="dbzService.characters"
+      (onDelete)="onDeleteCharacter($event)"
+      [characterList]="characters"
     ></dbz-list>
     <!-- this was on the lower tag, but it was almost okey -->
   </div>
   <div class="col">
     <dbz-add-character
-      (onNewCharacter)="dbzService.onNewCharacter($event)"
+      (onNewCharacter)="onNewCharacter($event)"
     ></dbz-add-character>
   </div>
 </div>

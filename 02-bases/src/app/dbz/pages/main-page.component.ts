@@ -1,3 +1,4 @@
+import { Character } from './../interfaces/character.interface';
 import { Component } from '@angular/core';
 import { DbzService } from '../services/dbz.service';
 
@@ -8,10 +9,17 @@ import { DbzService } from '../services/dbz.service';
 export class MainPageComponent {
   public title: string = 'Dragon Ball Z Characters';
 
-  constructor(public dbzService: DbzService) {
-    this.dbzService.characters;
-    // this.dbzService.onDeleteCharacter;
-    this.dbzService.deleteCharacterById
-    this.dbzService.onNewCharacter;
+  constructor(public dbzService: DbzService) {}
+
+  get characters(): Character[] {
+    return [...this.dbzService.characters];
+  }
+
+  onDeleteCharacter(id: string): void {
+    this.dbzService.deleteCharacterById(id);
+  }
+
+  onNewCharacter(character: Character): void {
+    this.dbzService.addCharacter(character);
   }
 }
