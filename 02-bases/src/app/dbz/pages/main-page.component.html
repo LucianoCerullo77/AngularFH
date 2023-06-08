@@ -5,7 +5,7 @@
   <div class="col">
     <!-- calling data from list component with mainpage information -->
     <dbz-list
-      (onDelete)="dbzService.onDeleteCharacter($event)"
+      (onDelete)="dbzService.deleteCharacterById($event)"
       [characterList]="dbzService.characters"
     ></dbz-list>
     <!-- this was on the lower tag, but it was almost okey -->

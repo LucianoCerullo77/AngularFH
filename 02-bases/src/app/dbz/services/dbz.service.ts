@@ -18,7 +18,11 @@ export class DbzService {
       power: 20000,
       id: uuid(),
     },
-    { name: 'Vegeta', power: 18000, id: uuid() },
+    {
+      name: 'Vegeta',
+      power: 18000,
+      id: uuid()
+    },
   ];
 
   onNewCharacter(character: Character): void {
@@ -26,8 +30,14 @@ export class DbzService {
     this.characters.push(newCharacter);
   }
 
-  onDeleteCharacter(index: number): void {
-    // this was good
-    this.characters.splice(index, 1);
+  // onDeleteCharacter(index: number): void {
+  //   // this was good
+  //   this.characters.splice(index, 1);
+  // }
+
+  deleteCharacterById(id: string): void {
+    this.characters = this.characters.filter(
+      (character) => character.id !== id
+    );
   }
 }
