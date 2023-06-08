@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import {} from 'uuid'
+import { v4 as uuid } from 'uuid';
 
 import { Character } from '../interfaces/character.interface';
 
 @Injectable({
   providedIn: 'root',
 })
+
 export class DbzService {
   public characters: Character[] = [
     {
