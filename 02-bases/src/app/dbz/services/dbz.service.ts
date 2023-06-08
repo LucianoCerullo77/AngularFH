@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import {} from 'uuid'
+
 import { Character } from '../interfaces/character.interface';
 
 @Injectable({
