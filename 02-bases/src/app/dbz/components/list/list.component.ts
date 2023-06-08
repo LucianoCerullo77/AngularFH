@@ -12,9 +12,10 @@ export class DbzListComponent {
   public characterList: Character[] = [];
 
   @Output()
-  public deleteCharacter: EventEmitter<Character> = new EventEmitter();
+  public onDelete: EventEmitter<number> = new EventEmitter();
+  // this was almost okey
 
   onDeleteCharacter(index: number): void {
-    console.log({ index });
+    this.onDelete.emit(index)
   }
 }
