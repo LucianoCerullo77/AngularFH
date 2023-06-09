@@ -6,6 +6,7 @@
     "start": "ng serve -o",
     "build": "ng build",
     "build:href": "ng build --base-href ./",
+    "build:githhub": "",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete:docs": "del docs",
