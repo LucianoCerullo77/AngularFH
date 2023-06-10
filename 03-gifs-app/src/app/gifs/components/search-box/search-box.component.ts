@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       type="text"
       class="form-control"
       placeholder="Search Gifs . . ."
-      (keyup)="searchTag(txtTagInput.value)"
+      (keyup.enter)="searchTag(txtTagInput.value)"
       #txtTagInput
     />`,
   styleUrls: ['./search-box.component.css'],
