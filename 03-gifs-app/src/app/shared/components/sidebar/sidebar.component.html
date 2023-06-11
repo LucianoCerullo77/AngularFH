@@ -3,8 +3,11 @@
   <hr class="text-warning" />
 
   <div class="list-group list-reset">
-    <button class="list-group list-group-item list-group-item-action">
-      Valorant
+    <button
+      class="list-group list-group-item list-group-item-action mb-2"
+      *ngFor="let tag of tags"
+    >
+      {{ tag | titlecase }}
     </button>
   </div>
 </div>
