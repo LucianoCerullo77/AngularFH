@@ -19,8 +19,4 @@ export class SidebarComponent implements OnInit {
     return this.gifsService.tagsHistory
 
   }
-
-  private gifsArray:string[] = this.gifsService.tagsHistory
-  public showGifs: string[] = this.gifsService.tagsHistory
-
 }
