@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GifsService {
-
-  private giphyKey: string = 'zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz';
-
   private _tagsHistory: string[] = [];
+  private giphyApiKey: string = 'zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz';
+
+  constructor(private http: HttpClient) {}
+
+  get tagsHistory() {
+    return [...this._tagsHistory];
+  }
 
   private organizeHistory(tag: string) {
     tag = tag.toLowerCase();
@@ -22,12 +27,14 @@ export class GifsService {
     this._tagsHistory = this.tagsHistory.splice(0, 10);
   }
 
-  get tagsHistory() {
-    return [...this._tagsHistory];
-  }
-
   searchTag(tag: string): void {
     if (tag.length === 0) return;
     this.organizeHistory(tag);
+
+    this.http.get(
+      'https://api.giphy.com/v1/gifs/search?api_key=zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz&q=valorant&limit=12'
+    );
+
+    // 'https://api.giphy.com/v1/gifs/search?api_key=zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz&q=valorant&limit=12'
   }
 }
