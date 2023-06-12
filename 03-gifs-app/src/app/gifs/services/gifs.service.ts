@@ -31,9 +31,13 @@ export class GifsService {
     if (tag.length === 0) return;
     this.organizeHistory(tag);
 
-    this.http.get(
-      'https://api.giphy.com/v1/gifs/search?api_key=zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz&q=valorant&limit=12'
-    );
+    this.http
+      .get(
+        'https://api.giphy.com/v1/gifs/search?api_key=zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz&q=valorant&limit=12'
+      )
+      .subscribe((res) => {
+        console.log(res);
+      });
 
     // 'https://api.giphy.com/v1/gifs/search?api_key=zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz&q=valorant&limit=12'
   }
