@@ -4,6 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class GifsService {
+
+  private giphyKey: string = 'zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz';
+
   private _tagsHistory: string[] = [];
 
   private organizeHistory(tag: string) {
@@ -25,6 +28,6 @@ export class GifsService {
 
   searchTag(tag: string): void {
     if (tag.length === 0) return;
-    this.organizeHistory(tag)
+    this.organizeHistory(tag);
   }
 }
