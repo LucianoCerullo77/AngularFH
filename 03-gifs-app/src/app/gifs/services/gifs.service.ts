@@ -44,7 +44,6 @@ export class GifsService {
       .get<SearchResponse>(`${this.serviceURL}/search`, { params })
       .subscribe((res) => {
         this.gifsList = res.data;
-        console.log({ gifs: this.gifsList });
       });
 
     // 'https://api.giphy.com/v1/gifs/search?api_key=zyhfnQBl6e3sapRzbg4t4LtYsknYvWuz&q=valorant&limit=12'
