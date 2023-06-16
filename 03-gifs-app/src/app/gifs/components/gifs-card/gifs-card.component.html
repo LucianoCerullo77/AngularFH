@@ -1,10 +1,11 @@
 <div class="card mb-3 mt-3 text-center bg-dark h-100">
+  <shared-lazy-image></shared-lazy-image>
   <img
     [src]="gifs.images.downsized_medium.url"
     [alt]="gifs.title"
     class="card-img-top img-fluid"
   />
   <div class="card-body text-white">
-    <p class="card-text">{{ gifs.title }}</p>
+    <p class="card-text">{{ gifs.title || "No Title Available" }}</p>
   </div>
 </div>

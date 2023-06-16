@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-lazy-image',
+  selector: 'shared-lazy-image',
   templateUrl: './lazy-image.component.html',
-  styleUrls: ['./lazy-image.component.css']
+  styleUrls: ['./lazy-image.component.css'],
 })
-export class LazyImageComponent {
-
-}
+export class LazyImageComponent {}
