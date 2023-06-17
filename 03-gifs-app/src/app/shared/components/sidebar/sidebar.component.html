@@ -11,4 +11,11 @@
       {{ tag | titlecase }}
     </button>
   </div>
+  <button
+    (click)="deleteHistory()"
+    class="btn btn-danger mb-2"
+    *ngIf="tags.length"
+  >
+    Delete History
+  </button>
 </div>

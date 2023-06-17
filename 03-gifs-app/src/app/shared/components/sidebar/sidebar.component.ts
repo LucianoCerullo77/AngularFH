@@ -19,4 +19,10 @@ export class SidebarComponent implements OnInit {
   showGifByHistory(tag: string): void {
     this.gifsService.searchTag(tag);
   }
+
+  deleteHistory(): void {
+    const remove = localStorage.removeItem('history');
+    location.reload();
+    return remove;
+  }
 }
