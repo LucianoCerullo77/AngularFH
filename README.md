@@ -2,4 +2,4 @@
 
 This are the angular course of Fernando Herrera.
 
-dbzcharactersapp: https://dbzcharacters-angular.netlify.app/
+dbz Characters App: https://dbzcharacters-angular.netlify.app/
