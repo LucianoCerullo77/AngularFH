@@ -1,1 +1,20 @@
-<div class="alert alert-warning text-center">No Country Available</div>
+<div
+  *ngIf="countries.length === 0; else table"
+  class="alert alert-warning text-center"
+>
+  No Country Available
+</div>
+
+<ng-template #table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Flag</th>
+        <th>Name</th>
+        <th>Population</th>
+        <th></th>
+      </tr>
+    </thead>
+  </table>
+</ng-template>
