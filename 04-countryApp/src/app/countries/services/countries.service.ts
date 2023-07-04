@@ -9,8 +9,15 @@ export class CountriesServices {
   private byCapital: string = '/capital/';
   private byCountry: string = '/name/';
   private byRegion: string = '/region/';
+  private byAlphaCode: string = '/alpha/';
 
   constructor(private http: HttpClient) {}
+
+  searchCountryByAlphaCode(code: string): Observable<Country[]> {
+    const url = `${this.apiURL}${this.byAlphaCode}${code}`;
+    return this.http.get<Country[]>(url).pipe(catchError(() => of([])));
+  }
+
   searchCapital(term: string): Observable<Country[]> {
     const url = `${this.apiURL}${this.byCapital}${term}`;
     return this.http.get<Country[]>(url).pipe(catchError(() => of([])));
