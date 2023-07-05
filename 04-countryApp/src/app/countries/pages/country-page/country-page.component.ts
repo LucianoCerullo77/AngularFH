@@ -30,8 +30,7 @@ export class CountryPageComponent implements OnInit {
         if (!country) {
           return this.router.navigateByUrl('');
         }
-        // return (this.country = country);
-        return;
+        return (this.country = country);
       });
   }
 }
