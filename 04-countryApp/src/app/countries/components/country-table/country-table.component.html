@@ -10,7 +10,7 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>Icon</th>
+        <th>Code</th>
         <th>Flag</th>
         <th>Name</th>
         <th>Capital</th>
@@ -28,7 +28,7 @@
         <td>{{ country.name.common }}</td>
         <td>{{ country.capital }}</td>
         <td>{{ country.population | number }}</td>
-        <td><a href="#">View More</a></td>
+        <td><a [routerLink]="['/countries/by', country.cca3]">View More</a></td>
       </tr>
     </tbody>
   </table>
