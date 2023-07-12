@@ -11,11 +11,15 @@ export class SearchBoxComponent implements OnInit {
   @Input()
   public placeholder: string = '';
 
-  @Output() public onValue: EventEmitter<string> = new EventEmitter();
+  @Output()
+  public onValue: EventEmitter<string> = new EventEmitter();
+
+  @Output()
+  public onDebounce: EventEmitter<string> = new EventEmitter();
 
   ngOnInit(): void {
     this.debouncer.pipe(debounceTime(500)).subscribe((value) => {
-      console.log('debouncer value', value);
+      this.onDebounce.emit(value);
     });
   }
 
