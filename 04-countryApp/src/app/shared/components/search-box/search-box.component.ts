@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, debounceTime } from 'rxjs';
 
 @Component({
   selector: 'shared-search-box',
@@ -14,7 +14,7 @@ export class SearchBoxComponent implements OnInit {
   @Output() public onValue: EventEmitter<string> = new EventEmitter();
 
   ngOnInit(): void {
-    this.debouncer.subscribe((value) => {
+    this.debouncer.pipe(debounceTime(500)).subscribe((value) => {
       console.log('debouncer value', value);
     });
   }
