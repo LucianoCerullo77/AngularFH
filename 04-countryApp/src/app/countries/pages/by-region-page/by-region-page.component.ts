@@ -19,10 +19,12 @@ export class ByRegionPageComponent {
     'Europe',
     'Oceania',
   ];
+  public selectedRegion?: Region;
 
-  searchByRegion(term: string) {
+  searchByRegion(region: Region) {
+    this.selectedRegion = region;
     this.countriesServices
-      .searchRegion(term)
+      .searchRegion(region)
       .subscribe((countries) => (this.countries = countries));
   }
 }
