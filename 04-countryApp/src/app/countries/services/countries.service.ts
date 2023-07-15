@@ -20,7 +20,9 @@ export class CountriesServices {
     byRegion: { region: '', countries: [] },
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.loadFromLocalStorage();
+  }
 
   private saveToLocalStorage() {
     localStorage.setItem('cacheStore', JSON.stringify(this.cacheStore));
