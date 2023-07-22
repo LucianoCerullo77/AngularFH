@@ -12,16 +12,23 @@ export class MenuComponent {
   ngOnInit() {
     this.menuItems = [
       {
-        label: 'New',
-        icon: 'pi pi-fw pi-plu',
+        label: 'Angular Pipes',
+        icon: 'pi pi-desktop',
+        items: [
+          { label: 'Dates', icon: 'pi pi-align-left' },
+          { label: 'Numbers', icon: 'pi pi-dollar' },
+          { label: 'UnCommon', icon: 'pi pi-globe' },
+        ],
       },
       {
-        label: 'Open',
-        icon: 'pi pi-fw pi-download',
-      },
-      {
-        label: 'Undo',
-        icon: 'pi pi-fw pi-refresh',
+        label: 'Custom Pipes',
+        icon: 'pi pi-cog',
+        items: [
+          {
+            label: 'Anoter element',
+            icon: 'pi pi-cog',
+          },
+        ],
       },
     ];
   }
