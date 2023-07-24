@@ -15,9 +15,9 @@ export class MenuComponent {
         label: 'Angular Pipes',
         icon: 'pi pi-desktop',
         items: [
-          { label: 'Dates', icon: 'pi pi-align-left' },
-          { label: 'Numbers', icon: 'pi pi-dollar' },
-          { label: 'UnCommon', icon: 'pi pi-globe' },
+          { label: 'Dates', icon: 'pi pi-align-left', routerLink: '/' },
+          { label: 'Numbers', icon: 'pi pi-dollar', routerLink: 'numbers' },
+          { label: 'UnCommon', icon: 'pi pi-globe', routerLink: 'uncommon' },
         ],
       },
       {

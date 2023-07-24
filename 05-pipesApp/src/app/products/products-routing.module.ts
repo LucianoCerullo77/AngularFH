@@ -10,11 +10,11 @@ const routes: Routes = [
     component: BasicsPageComponent,
   },
   {
-    path: '',
+    path: 'numbers',
     component: NumbersPageComponent,
   },
   {
-    path: '',
+    path: 'uncommon',
     component: UncommonPageComponent,
   },
   {
