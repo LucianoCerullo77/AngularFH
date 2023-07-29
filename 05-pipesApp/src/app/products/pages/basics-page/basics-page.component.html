@@ -15,4 +15,30 @@
     <p-card header="TitleCase Pipe">{{fullname | titlecase}}</p-card>
   </div>
 
+  <div class="col-12 md:col-6">
+    <p-card header="Date Pipe">
+      <ol>
+        <li>Date : </li>
+        <li> Date: | date</li>
+        <li> Date: | date: "short"</li>
+        <li> Date: | date: "long"</li>
+        <li> Date: | date: "MMMM"</li>
+        <li> Date: | date: "MMMM dd, yyyy"</li>
+      </ol>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="TitleCase Pipe">
+      <ol>
+        <li>{{customDate}} : </li>
+        <li> {{customDate | date}}</li>
+        <li> {{customDate | date: "short"}}</li>
+        <li> {{customDate | date: "long"}}</li>
+        <li> {{customDate | date: "MMMM"}}</li>
+        <li> {{customDate | date: "MMMM dd, yyyy"}}</li>
+      </ol>
+    </p-card>
+  </div>
+
 </div>
