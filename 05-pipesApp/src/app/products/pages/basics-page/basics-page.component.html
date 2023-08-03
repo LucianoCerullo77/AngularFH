@@ -29,9 +29,11 @@
       <hr>
 
       <ol>
-        <li>date | date : "long" : "GMT-6" </li>
+        <li>Date | date : "long" : "GMT-6" </li>
         <li>Date | date : "long" :"GMT-3"</li>
-        <li>Date | date : "long" :"GMT-3" :"es-ARG" </li>
+        <li>Date | date : "long" :"" :"es-ARG" </li>
+        <li>Date | date : "long" :"" :"en-US" </li>
+        <li>Date | date : "long" :"" :"fr-CA" </li>
       </ol>
 
     </p-card>
@@ -53,7 +55,9 @@
       <ol>
         <li>{{customDate | date : "long" :"GMT-6"}}</li>
         <li>{{customDate | date : "long" :"GMT-3"}}</li>
-        <li>{{customDate | date : "long" :"GMT-3" :"es-AR"}} </li>
+        <li>{{customDate | date : "long" :"" :"es-AR"}} </li>
+        <li>{{customDate | date : "long" :"" :"en-US"}} </li>
+        <li>{{customDate | date : "long" :"" :"fr-CA"}} </li>
       </ol>
 
     </p-card>
