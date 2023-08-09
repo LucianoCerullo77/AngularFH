@@ -35,6 +35,11 @@ export class UncommonPageComponent {
     'Grogu',
     'Boba Fett',
   ];
+  public clientsMap = {
+    '=0':'no clients waiting.',
+    '=1': 'only 1 Client waiting.',
+    'other':'# Clients waiting.'
+  }
 
   deleteClient(): void {
     this.clients.shift();
