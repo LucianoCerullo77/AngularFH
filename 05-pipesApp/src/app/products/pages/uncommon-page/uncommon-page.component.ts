@@ -9,9 +9,13 @@ export class UncommonPageComponent {
   // i18n Select
   public name: string = 'John Doe';
   public gender: 'male' | 'female' = 'male';
+  public invitationMap = {
+    male: 'invited Man of the year',
+    female: 'invited Woman of the year',
+  };
 
   changeClient(): void {
     this.name = 'Melissa';
-    this.gender = 'female';
+    this.gender = 'female' ;
   }
 }
