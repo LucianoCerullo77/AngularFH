@@ -6,6 +6,11 @@
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
       <p> Greetings! {{name}}, You are invited to our Main Event!</p>
+
+      <p-button
+        (click)='changeClient()'
+        label="Change Client">
+      </p-button>
     </p-fieldset>
   </div>
 
