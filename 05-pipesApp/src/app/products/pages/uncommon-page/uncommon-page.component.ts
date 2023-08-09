@@ -16,6 +16,23 @@ export class UncommonPageComponent {
 
   changeClient(): void {
     this.name = 'Melissa';
-    this.gender = 'female' ;
+    this.gender = 'female';
   }
+
+  // i18n Plural
+
+  public clients: string[] = [
+    'John',
+    'Vanessa',
+    'Anakin',
+    'Padme',
+    'Luke',
+    'Leia',
+    'Obi-Wan',
+    'Dooku',
+    'Ahsoka',
+    'Mando',
+    'Grogu',
+    'Boba Fett',
+  ];
 }

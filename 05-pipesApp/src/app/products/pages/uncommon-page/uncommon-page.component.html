@@ -5,8 +5,10 @@
 <div class="grid">
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-      <p> Greetings! {{name}}, You are the {{gender | i18nSelect:invitationMap}} of our Main Event!</p>
-
+      <p>
+        Greetings! {{name}}, You are the {{gender | i18nSelect:invitationMap}}
+        of our Main Event!
+      </p>
       <p-button
         (click)='changeClient()'
         label="Change Client">
@@ -16,7 +18,7 @@
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-
+      <p>Currently we have {{clients.length}} Clients!</p>
     </p-fieldset>
   </div>
 
