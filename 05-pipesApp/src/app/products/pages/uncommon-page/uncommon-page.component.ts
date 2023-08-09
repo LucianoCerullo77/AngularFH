@@ -35,4 +35,8 @@ export class UncommonPageComponent {
     'Grogu',
     'Boba Fett',
   ];
+
+  deleteClient(): void {
+    this.clients.shift();
+  }
 }

@@ -18,7 +18,8 @@
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-      <p>Currently we have {{clients.length}} Clients!</p>
+      <p>Currently we have {{clients.length}} clients waiting</p>
+      <p-button label="Delete Client" (click)="deleteClient()"></p-button>
     </p-fieldset>
   </div>
 
