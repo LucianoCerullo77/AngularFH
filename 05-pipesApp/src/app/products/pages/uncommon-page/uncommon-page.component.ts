@@ -29,10 +29,10 @@ export class UncommonPageComponent {
     'Luke',
     'Leia',
     'Obi-Wan',
-    'Dooku',
-    'Ahsoka',
+
+
     'Mando',
-    'Grogu',
+
     'Boba Fett',
   ];
   public clientsMap = {
