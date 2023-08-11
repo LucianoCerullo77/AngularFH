@@ -29,17 +29,14 @@ export class UncommonPageComponent {
     'Luke',
     'Leia',
     'Obi-Wan',
-
-
     'Mando',
-
     'Boba Fett',
   ];
   public clientsMap = {
-    '=0':'no clients waiting.',
+    '=0': 'no clients waiting.',
     '=1': 'only 1 Client waiting.',
-    'other':'# Clients waiting.'
-  }
+    other: '# Clients waiting.',
+  };
 
   deleteClient(): void {
     this.clients.shift();
