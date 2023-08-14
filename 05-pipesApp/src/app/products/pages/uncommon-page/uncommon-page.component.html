@@ -67,6 +67,7 @@
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="Async Pipe" [toggleable]="true">
+      <pre *ngIf="!(myObservableTimer | async)">Solving Observable . . .</pre>
       <pre>{{myObservableTimer | async}}</pre>
     </p-fieldset>
   </div>
