@@ -36,7 +36,7 @@
         <ng-template pTemplate="body" let-product>
           <tr>
             <td>{{ product.name }}</td>
-            <td>{{ product.canFly }}</td>
+            <td>{{ product.canFly | canFly }}</td>
             <td>{{ product.color }}</td>
           </tr>
         </ng-template>
