@@ -1,11 +1,35 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
+import { Error404PageComponent } from './shared/pages/error404-page/error404-page.component';
 
-const routes: Routes = []; // sets up routes constant where you define your routes
+const routes: Routes = [
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+  },
+  {
+    path: 'heroes',
+    loadChildren: () =>
+      import('./heroes/heroes.module').then((m) => m.HeroesModule),
+  },
+  {
+    path: '404',
+    component: Error404PageComponent,
+  },
+  {
+    path: '',
+    redirectTo: 'heroes',
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: '404',
+  },
+]; // sets up routes constant where you define your routes
 
 // configures NgModule imports and exports
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
