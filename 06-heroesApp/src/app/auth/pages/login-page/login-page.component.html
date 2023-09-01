@@ -12,5 +12,12 @@
     <input type="password" matInput placeholder="Username">
   </mat-form-field>
 
-  <button mat-button mat-flat-button color="primary">Log In</button>
+  <button mat-button mat-flat-button color="primary">
+    <mat-icon>save</mat-icon>
+    Log In
+  </button>
+
+  <div class="flex justify-content-end mt-5">
+    <a routerLink="/auth/new-account">¿Already have an account?</a>
+  </div>
 </div>
