@@ -14,10 +14,16 @@
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
+
+    <span class="spacer"></span>
+
+    <button mat-button>Logout</button>
   </mat-toolbar>
 
+  <div class="container">
+
+    <router-outlet></router-outlet>
+
+  </div>
+
 </mat-sidenav-container>
-
-
-
-<router-outlet></router-outlet>
