@@ -5,7 +5,7 @@ import { Hero } from '../interfaces/hero.interface';
 import { environment } from 'src/environments/environments';
 
 @Injectable({ providedIn: 'root' })
-export class ServiceNameService {
+export class HeroesService {
   private baseURL: string = environment.baseURL;
 
   constructor(private http: HttpClient) {}
