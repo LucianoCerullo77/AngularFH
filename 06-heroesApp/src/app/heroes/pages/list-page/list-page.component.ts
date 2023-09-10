@@ -8,6 +8,7 @@ import { HeroesService } from '../../services/heroes.service';
   templateUrl: './list-page.component.html',
   styles: [],
 })
+
 export class ListPageComponent implements OnInit {
   public heroes: Hero[] = [];
 

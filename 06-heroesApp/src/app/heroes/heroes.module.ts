@@ -10,7 +10,6 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 
-
 @NgModule({
   declarations: [
     HeroPageComponent,
@@ -18,12 +17,8 @@ import { CardComponent } from './components/card/card.component';
     ListPageComponent,
     NewPageComponent,
     SearchPageComponent,
-    CardComponent
+    CardComponent,
   ],
-  imports: [
-    CommonModule,
-    HeroesRoutingModule,
-    MaterialModule
-  ]
+  imports: [CommonModule, HeroesRoutingModule, MaterialModule],
 })
-export class HeroesModule { }
+export class HeroesModule {}
