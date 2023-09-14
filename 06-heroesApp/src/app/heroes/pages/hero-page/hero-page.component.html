@@ -7,5 +7,12 @@
 </ng-template>
 
 <div *ngIf="hero; else divLoading" class="grid">
-  {{hero}}
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-header>
+      <mat-card-title>{{hero.alter_ego}}</mat-card-title>
+      <mat-card-subtitle>{{hero.superhero}}</mat-card-subtitle>
+
+      <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image>
+    </mat-card-header>
+  </mat-card>
 </div>
