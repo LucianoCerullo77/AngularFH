@@ -20,7 +20,11 @@ export class HeroesService {
       .pipe(catchError((error) => of(undefined)));
   }
 
-  getSuggestions(query: string):Observable<Hero[]>{
-    return this.http.get<Hero[]>(`${this.baseURL}/heroes?q=${query}&_limit=6`)
+  getSuggestions(query: string): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`${this.baseURL}/heroes?q=${query}&_limit=6`);
+  }
+
+  addHero(hero: Hero): Observable<Hero> {
+    return this.http.post<Hero>(`${this.baseURL}/heroes`, hero);
   }
 }
