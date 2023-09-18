@@ -12,7 +12,7 @@ export class NewPageComponent {
     id: new FormControl<string>(''),
     superhero: new FormControl<string>('', { nonNullable: true }),
     publisher: new FormControl<Publisher>(
-      Publisher.DCComics || Publisher.MarvelComics
+      Publisher.DCComics
     ),
     alter_ego: new FormControl(''),
     first_appearance: new FormControl(''),
@@ -30,4 +30,11 @@ export class NewPageComponent {
       desc: 'Marvel - Comics',
     },
   ];
+
+  onSubmit(): void {
+    console.log({
+      formIsValid: this.heroForm.valid,
+      value: this.heroForm.value,
+    });
+  }
 }
