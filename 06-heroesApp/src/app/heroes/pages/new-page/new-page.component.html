@@ -11,35 +11,44 @@
     <mat-card>
       <mat-card-content>
 
-        <div class="grid">
+        <!-- Form Started!-->
+        <form class="grid" [formGroup]="heroForm">
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>SuperHero</mat-label>
-            <input type="text" matInput required />
+            <input type="text" matInput required formControlName="superhero" />
           </mat-form-field>
 
           <mat-form-field class="col-12 sm:col-6">
             <mat-label>Alter Ego</mat-label>
-            <input type="text" matInput required />
+            <input type="text" matInput required formControlName="alter_ego" />
           </mat-form-field>
 
           <mat-form-field class="col-12">
             <mat-label>First Appearance</mat-label>
-            <input type="text" matInput required />
+            <input type="text" matInput required
+              formControlName="first_appearance" />
           </mat-form-field>
 
           <mat-form-field class="col-12">
             <mat-label>Character</mat-label>
-            <input type="text" matInput required />
+            <input type="text" matInput required formControlName="characters" />
           </mat-form-field>
 
           <mat-form-field class="col-12">
             <mat-label>Company</mat-label>
             <mat-select required>
               <mat-option *ngFor="let publisher of publishers"
-                [value]="publisher.id">{{publisher.desc}}</mat-option>
+                [value]="publisher.id" formControlName="publisher">{{publisher.desc}}</mat-option>
             </mat-select>
+
+            <mat-form-field class="col-12">
+              <mat-label>Alternative Image</mat-label>
+              <input type="text" matInput formControlName="alt_img" />
+            </mat-form-field>
+
           </mat-form-field>
-        </div>
+        </form>
+        <!-- Form Ended!!-->
 
         <div class="flex justify-content-between">
           <button mat-flat-button color="warn"><mat-icon>delete</mat-icon>Delete</button>
@@ -52,7 +61,7 @@
 
   <div class="col-12 sm:col-6">
     <mat-card>
-      <img src alt="heroImage" mat-card-image>
+      <img src alt="heroImage" mat-card-image formControlName="">
     </mat-card>
   </div>
 
