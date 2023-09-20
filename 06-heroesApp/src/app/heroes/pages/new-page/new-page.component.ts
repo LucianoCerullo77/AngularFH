@@ -12,7 +12,7 @@ export class NewPageComponent {
     id: new FormControl<string>(''),
     superhero: new FormControl<string>('', { nonNullable: true }),
     publisher: new FormControl<Publisher>(
-      Publisher.DCComics
+      Publisher.DCComics || Publisher.MarvelComics
     ),
     alter_ego: new FormControl(''),
     first_appearance: new FormControl(''),
