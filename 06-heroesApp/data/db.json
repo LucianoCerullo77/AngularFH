@@ -166,6 +166,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "cWe4OAW",
+      "superhero": "Goku",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Kakaroto",
+      "first_appearance": "Dragon Ball Z #1",
+      "characters": "Goku - Kakaroto",
+      "alt_img": "https://orig00.deviantart.net/fa10/f/2017/107/7/2/goku_dbs_by_xyelkiltrox-db647dj.png"
     }
   ]
 }
