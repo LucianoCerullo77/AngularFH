@@ -65,13 +65,15 @@ export class NewPageComponent implements OnInit {
 
     if (this.currentHero.id) {
       this.heroesService.updateHero(this.currentHero).subscribe((hero) => {
-        // show snackbar
+        this.showSnackBar(`${hero.superhero} updated`);
       });
       return;
     }
 
     this.heroesService.addHero(this.currentHero).subscribe((hero) => {
       // show snackbar and redirect to /heroes/edit/ hero.id
+      this.router.navigate(['heroes/edit', hero.id]);
+      this.showSnackBar(`${hero.superhero} created`);
     });
   }
 
