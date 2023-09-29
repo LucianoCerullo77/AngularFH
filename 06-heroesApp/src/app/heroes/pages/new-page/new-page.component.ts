@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { filter, switchMap, tap } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { Hero, Publisher } from '../../interfaces/hero.interface';
@@ -86,6 +86,17 @@ export class NewPageComponent implements OnInit {
     const dialogRef = this.dialog.open(ConfirmDialogComponent, {
       data: this.heroForm.value,
     });
+
+    // RESOLVE THIS!! ERROR ON SWITCHMAP, BOOLEAN NOT ASSIGNABLE TO boolean!!??
+    // dialogRef.afterClosed()
+    //   .pipe(
+    //     filter( (result: boolean) => result ),
+    //     switchMap( () => this.heroesService.deleteHeroById( this.currentHero.id )),
+    //     filter( (wasDeleted: boolean) => wasDeleted ),
+    //   )
+    //   .subscribe(() => {
+    //     this.router.navigate(['/heroes']);
+    //   });
 
     dialogRef.afterClosed().subscribe((result) => {
       if (!result) return;
