@@ -21,4 +21,8 @@ export class BasicPageComponent {
   });
 
   constructor(private formBuider: FormBuilder) {}
+
+  onSave(): void {
+    console.log(this.myForm.value);
+  }
 }
