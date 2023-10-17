@@ -28,6 +28,7 @@ export class BasicPageComponent {
   constructor(private formBuider: FormBuilder) {}
 
   onSave(): void {
+    if(this.myForm.invalid) return
     console.log(this.myForm.value);
   }
 }
