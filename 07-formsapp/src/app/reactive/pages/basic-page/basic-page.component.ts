@@ -6,6 +6,12 @@ import {
   Validators,
 } from '@angular/forms';
 
+const rtx5090 = {
+  name: 'RTX 5090',
+  price: 2500,
+  inStorage: 2,
+};
+
 @Component({
   templateUrl: './basic-page.component.html',
   styles: [],
@@ -28,14 +34,13 @@ export class BasicPageComponent implements OnInit {
   constructor(private formBuider: FormBuilder) {}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.myForm.reset(rtx5090);
   }
 
   onSave(): void {
-    if(this.myForm.invalid) return
+    if (this.myForm.invalid) return;
     console.log(this.myForm.value);
 
-
-    this.myForm.reset({})
+    this.myForm.reset({});
   }
 }
