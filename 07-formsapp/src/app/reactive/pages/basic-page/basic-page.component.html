@@ -16,12 +16,12 @@
             formControlName="name"
             placeholder="Nombre del producto">
 
-          <span *ngIf="myForm.controls['name'].getError('required')"
+          <span *ngIf="myForm.controls['name'].getError('required') && myForm.controls['name'].touched"
             class="form-text text-danger">
             <!-- Debe de ser de 3 letras -->
             This field is required
           </span>
-          <span *ngIf="myForm.controls['name'].getError('minlength')"
+          <span *ngIf="myForm.controls['name'].getError('minlength') && myForm.controls['name'].touched"
             class="form-text text-danger">
             <!-- Debe de ser de 3 letras -->
             This field require 3 letters at least.
