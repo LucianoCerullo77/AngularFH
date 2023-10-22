@@ -16,7 +16,7 @@
             formControlName="name"
             placeholder="Nombre del producto">
 
-          <span *ngIf="myForm.controls['name'].getError('required') && myForm.controls['name'].touched"
+          <span *ngIf="isValidField('name')"
             class="form-text text-danger">
             <!-- Debe de ser de 3 letras -->
             This field is required

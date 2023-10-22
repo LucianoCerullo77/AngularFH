@@ -37,10 +37,16 @@ export class BasicPageComponent implements OnInit {
     // this.myForm.reset(rtx5090);
   }
 
+  isValidField(field: string) {
+    return (
+      this.myForm.controls[field].errors && this.myForm.controls[field].touched
+    );
+  }
+
   onSave(): void {
-    if (this.myForm.invalid){
-      this.myForm.markAllAsTouched
-      return
+    if (this.myForm.invalid) {
+      this.myForm.markAllAsTouched;
+      return;
     }
     console.log(this.myForm.value);
 
