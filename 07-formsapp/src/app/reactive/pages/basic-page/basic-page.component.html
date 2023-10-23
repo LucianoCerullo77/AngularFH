@@ -19,13 +19,9 @@
           <span *ngIf="isValidField('name')"
             class="form-text text-danger">
             <!-- Debe de ser de 3 letras -->
-            This field is required
+          {{getFieldError('name')}}
           </span>
-          <span *ngIf="myForm.controls['name'].getError('minlength') && myForm.controls['name'].touched"
-            class="form-text text-danger">
-            <!-- Debe de ser de 3 letras -->
-            This field require 3 letters at least.
-          </span>
+
         </div>
       </div>
 
