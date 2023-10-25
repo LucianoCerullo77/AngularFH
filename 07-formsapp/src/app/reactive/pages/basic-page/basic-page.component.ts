@@ -49,9 +49,15 @@ export class BasicPageComponent implements OnInit {
     const errors = this.myForm.controls[field].errors || {};
 
     for (const key of Object.keys(errors)) {
-      console.log(key);
+      switch (key) {
+        case 'required':
+          return 'This field is required';
+
+        case 'minlength':
+          return `Mininum ${errors['minlength'].requiredLenght} characters`;
+      }
     }
-    return 'hello';
+    return null;
   }
 
   onSave(): void {
