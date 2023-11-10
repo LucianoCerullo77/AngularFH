@@ -44,9 +44,9 @@
         <div class="input-group">
           <input class="form-control" [formControlName]="i">
 
-          <button class="btn btn-outline-danger"
+          <button (click)="onDeleteFavourite(i)" class="btn btn-outline-danger"
             type="button">
-            Eliminar
+            Delete
           </button>
         </div>
         <span *ngIf="isValidFieldInArray(favouriteGames, i)"
