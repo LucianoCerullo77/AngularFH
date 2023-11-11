@@ -1,7 +1,7 @@
 <h2>Reactivos: Switches</h2>
 <hr>
 
-<form autocomplete="off">
+<form [formGroup]="myForm" (ngSubmit)="onSave()" autocomplete="off">
 
   <!-- Radio -->
   <div class="row mb-3">
@@ -10,6 +10,7 @@
 
       <div class="form-check">
         <input class="form-check-input"
+          formControlName='gender'
           type="radio"
           value="M"
           id="radioMasculino">
@@ -20,6 +21,7 @@
 
       <div class="form-check">
         <input class="form-check-input"
+          formControlName='gender'
           type="radio"
           value="F"
           id="radioFemenino">
@@ -38,6 +40,7 @@
 
       <div class="form-check form-switch mt-2">
         <input class="form-check-input"
+          formControlName="wantNotifications"
           type="checkbox"
           id="flexSwitchCheckChecked">
         <label class="form-check-label" for="flexSwitchCheckChecked">Quiero
@@ -53,13 +56,15 @@
     <div class="col-sm-9">
       <div class="form-check">
         <input class="form-check-input"
+          formControlName="termsAndConditions"
           type="checkbox"
           id="flexCheckDefault">
         <label class="form-check-label" for="flexCheckDefault">
           Términos y condiciones de uso
         </label>
       </div>
-      <span class="form-text text-danger">
+      <span *ngIf="isValidField('termsAndConditions')"
+        class="form-text text-danger">
         Debe de aceptar las condiciones de uso
       </span>
 
@@ -70,7 +75,6 @@
   <div class="row">
     <div class="col">
       <button class="btn btn-primary float-end"
-        (click)="onSave()"
         type="submit">
         Guardar
       </button>

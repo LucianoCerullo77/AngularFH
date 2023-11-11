@@ -20,4 +20,10 @@ export class SwitchesPageComponent {
       return;
     }
   }
+
+  isValidField(field: string): boolean | null {
+    return (
+      this.myForm.controls[field].errors && this.myForm.controls[field].touched
+    );
+  }
 }
