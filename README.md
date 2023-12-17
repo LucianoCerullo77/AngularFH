@@ -8,6 +8,9 @@ https://dbzcharacters-angular.netlify.app/
 Current Projects on Work: 7
 Still some modifications on work.
 
+## On Work
+* Finishing validations.
+
 ## ToDo
 * Finish current course.
   
