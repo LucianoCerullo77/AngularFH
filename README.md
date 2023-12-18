@@ -13,4 +13,5 @@ Still some modifications on work.
 
 ## ToDo
 * Finish current course.
+* Write projects and descriptions.
   
