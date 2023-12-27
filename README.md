@@ -17,7 +17,8 @@ This is the Angular course of Fernando Herrera.
 
 ## Projects done:
 
-- GIFS App : https://dbzcharacters-angular.netlify.app / (Currently offline due to owner decision)
+- BasesApp :02-Bases / https://dbzcharacters-angular.netlify.app
+- GIFS App : 03-GifsApp / https://gifs-app-lc.netlify.app/
 - Country App: 04-CountryApp / https://country-app-lc.netlify.app
 - Pipes App: 05-PipesApp / (Only development)
 - Heroes App: 06-heroesApp / (Only development)
