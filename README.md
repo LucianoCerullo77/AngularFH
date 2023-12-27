@@ -2,16 +2,23 @@
 
 This is the Angular course of Fernando Herrera.
 
-Dragon Ball Z Characters App (Currently offline due to owner decision):
-https://dbzcharacters-angular.netlify.app/
+## Current Project on Work:
 
-Current Projects on Work: 7
-Still some modifications on work.
+- 08-Selectors
 
 ## On Work
-* Finishing validations.
+
+- Folder Structure.
 
 ## ToDo
-* Finish current course.
-* Write projects and descriptions.
-  
+
+- Finish current course.
+- Write projects and descriptions.
+
+## Projects done:
+
+- GIFS App : https://dbzcharacters-angular.netlify.app / (Currently offline due to owner decision)
+- Country App: 04-CountryApp / https://country-app-lc.netlify.app
+- Pipes App: 05-PipesApp / (Only development)
+- Heroes App: 06-heroesApp / (Only development)
+- Forms (validations) App: 07-FormsApp / (Only development)
