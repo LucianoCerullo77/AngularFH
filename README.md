@@ -1,8 +1,8 @@
-# AngularFH
+# Angular Learning
 
 This is the Angular course of Fernando Herrera.
 
-Dragon Ball Z Characters App (Currently offline due to owner decision. ):
+Dragon Ball Z Characters App (Currently offline due to owner decision):
 https://dbzcharacters-angular.netlify.app/
 
 Current Projects on Work: 7
