@@ -1,18 +1,13 @@
 export interface Country {
   name: Name;
-  tld?: string[];
-  cca2: string;
-  ccn3?: string;
   cca3: string;
   cioc?: string;
-  independent?: boolean;
   status: Status;
   unMember: boolean;
-  currencies: Currencies;
   idd: Idd;
   capital: string[];
   altSpellings: string[];
-  region: Region;
+  region: string;
   subregion: Subregion;
   languages: { [key: string]: string };
   translations: { [key: string]: Translation };
@@ -28,7 +23,7 @@ export interface Country {
   fifa?: string;
   car: Car;
   timezones: string[];
-  continents: Region[];
+  continents: string[];
   flags: Flags;
   coatOfArms: CoatOfArms;
   startOfWeek: StartOfWeek;
@@ -55,10 +50,6 @@ export interface CoatOfArms {
   svg?: string;
 }
 
-export enum Region {
-  Asia = "Asia",
-  Europe = "Europe",
-}
 
 export interface Currencies {
   EUR?: All;
