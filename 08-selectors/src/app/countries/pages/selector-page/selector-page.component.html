@@ -1,20 +1,23 @@
-<h1 class="mt-3">Selectores Anidados</h1>
-<hr>
+<section class="container">
+  <h1 class="mt-3">Selectores Anidados</h1>
+  <hr>
 
-<form [formGroup]="myForm">
-  <!--Regions-->
-  <div class="row mb-3">
-    <div class="col">
-      <label class="form-label">Continent:</label>
-      <select formControlName="region" class="form-control">
-        <option value="">-- Select Continent --</option>
-        <option [value]="region" *ngFor="let region of regions">{{region}}</option>
-      </select>
+  <form [formGroup]="myForm">
+    <!--Regions-->
+    <div class="row mb-3">
+      <div class="col">
+        <label class="form-label">Continent:</label>
+        <select formControlName="region" class="form-control">
+          <option value="">-- Select Continent --</option>
+          <option [value]="region" *ngFor="let region of regions">{{region}}</option>
+        </select>
+      </div>
     </div>
-  </div>
-</form>
+  </form>
 
-<h3>Form</h3>
+  <h3>Form</h3>
 
-<code>{{myForm.value | json  }}</code>
-<p>is Form Valid ? {{myForm.valid}}</p>
+  <code>{{myForm.value | json  }}</code>
+  <p>is Form Valid ? {{myForm.valid}}</p>
+
+</section>
