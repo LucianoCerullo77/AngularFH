@@ -8,7 +8,7 @@ This is the Angular course of Fernando Herrera.
 
 ## On Work
 
-- Folder Structure.
+- Country and region interfaces
 
 ## ToDo
 
