@@ -13,7 +13,6 @@ This is the Angular course of Fernando Herrera.
 ## ToDo
 
 - Finish current course.
-- Write projects and descriptions.
 
 ## Projects done:
 
