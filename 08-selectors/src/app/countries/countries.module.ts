@@ -7,5 +7,8 @@ import { SelectorPageComponent } from './pages/selector-page/selector-page.compo
 @NgModule({
   imports: [CommonModule, CountriesRoutingModule, ReactiveFormsModule],
   declarations: [SelectorPageComponent],
+  providers: [
+    /* Services */
+  ],
 })
-export class CountriesModule { }
+export class CountriesModule {}
